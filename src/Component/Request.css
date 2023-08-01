@@ -1,0 +1,368 @@
+.request-portal{
+    padding-top: 90px; /* Adjust the top padding to accommodate the fixed header */
+    padding-bottom: 80px; /* Adjust the bottom padding to accommodate the fixed footer */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds viewport height */
+    max-height: calc(100vh - 140px); /* Set the maximum height for the scrollable area */
+}
+.requestform {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+}
+
+.requestformhead h1 {
+    border: none;
+    border-left: 4px solid black;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+.requesthead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 49rem;
+}
+
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 80vw;
+    border: 0px solid black;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(39, 33, 33, 0.216);
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.items .inputs[type="text"],
+.inputs[type="number"],
+select {
+    padding: 5px;
+    width: 450px;
+    height: 30px;
+}
+
+.prevapproved {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+td {
+    line-height: 1.6;
+    text-align: center;
+}
+
+.form-questions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.questions p {
+    width: 600px;
+}
+
+.choose-options {
+    width: 230px;
+}
+
+select {
+    width: 360px;
+    height: 40px;
+}
+
+.uploading {
+    border: 1px solid blue;
+    width: 100%;
+    gap: 4rem;
+}
+
+.uploading p {
+    margin-left: 105px;
+    padding: 5px;
+}
+
+.upload-box-file {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-left: 120px;
+}
+
+input[type="file"] {
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.uploadbtn button {
+    color: white;
+    background-color:rgb(80,121,196); 
+    border: none;
+    outline: none;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+ul li {
+    color: red;
+    margin-left: 90px;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 80vw;
+    border: 0px solid black;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(39, 33, 33, 0.216);
+}
+
+.continue-form {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+}
+
+.continue-items {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="date"] {
+    padding: 5px;
+    width: 450px;
+    height: 20px;
+}
+
+.continue-items input[type="number"],
+input[type="number"] {
+    padding: 5px;
+    width: 450px;
+    height: 20px;
+}
+
+.continue-items input[type="file"] {
+    padding: 5px;
+    width: 350px;
+    height: 20px;
+}
+
+.continue-items input[type="name"] {
+    padding: 5px;
+    width: 300px;
+    height: 20px;
+}
+
+.todo-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 4rem;
+}
+
+.todo-lists button {
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(80,121,196);
+    border: none;
+    outline: none;
+}
+
+.submitbtn button {
+    width: 90px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(80,121,196);
+    border: none;
+    outline: none;
+    transform: translate(500%);
+}
+
+.continuebtn button {
+    padding: 5px;
+    border: none ;
+    outline: none;
+    color: white;
+    background-color: rgb(80,121,196);
+    cursor: pointer;
+    transform: translate(300%);
+}
+
+.recommended-names ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+    color: black;
+}
+
+.recommended-names button {
+    color: white;
+    background-color: rgb(80,121,196);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+@media (max-width: 1024px) {
+    .requesthead {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .requestform {
+        grid-template-columns: 1fr;
+    }
+
+    .items .inputs[type="text"],
+    .inputs[type="number"],
+    select {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .maindiv,
+    .todo {
+        width: 90vw;
+        margin-left: 0;
+    }
+
+    .form-questions {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .questions p {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .choose-options {
+        width: 100%;
+        max-width: 230px;
+    }
+
+    .uploading {
+        gap: 2rem;
+    }
+
+    .upload-box-file {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .todo-lists,
+    .recommended-names ul li {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    ul li {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .requesthead {
+        gap: 2rem;
+    }
+
+    .maindiv,
+    .todo {
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    .items .inputs[type="text"],
+    .inputs[type="number"],
+    select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .upload-box-file {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 0;
+    }
+
+    .uploading p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .todo-lists,
+    .recommended-names ul li {
+        gap: 0.5rem;
+    }
+
+    .submitbtn button,
+    .continuebtn button,
+    .recommended-names button {
+        width: 100%;
+        transform: none;
+    }
+}

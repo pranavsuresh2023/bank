@@ -1,0 +1,124 @@
+.main {
+    padding-top: 80px; /* Adjust the top padding to accommodate the fixed header */
+    padding-bottom: 80px; /* Adjust the bottom padding to accommodate the fixed footer */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds viewport height */
+    max-height: calc(100vh - 140px); /* Set the maximum height for the scrollable area */
+}
+.create-btn button {
+    margin-left: 1210px;
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(80,121,196);
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.create-btn button a {
+    color: white;
+    text-decoration: none;
+}
+
+#contentTable {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #contentTable th,
+  #contentTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #contentTable th {
+    background-color: white;
+    text-align: center;
+  }
+  
+  table {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+.container{
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    border: 0px solid black;
+    padding: 8px;
+    box-shadow: 0 0 20px rgba(39, 33, 33, 0.216);
+}
+.line {
+    border:1px solid  #ddd ;
+    margin: 0 auto;
+}
+.search-bar {
+    margin-left: 700px;
+    
+}
+#search{
+    margin-left: -50px;
+}
+.search-bar input{
+    font-size: 18px;
+    width: 230px;
+    border: 1px solid #ddd ;
+}
+.status-btns{
+    padding: 0;
+}
+ .status-btns button{
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+
+} 
+.inprogressbtn{
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.completebtn{
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    
+}
+.status-btns .inprogressbtn:focus{
+    background-color: rgb(80,121,196);
+    color: white;
+};
+.status-btns .completebtn:focus{
+    background-color: rgb(80,121,196);
+    color: white;
+}
+
+
+.heading{
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 1px solid black ;
+    border: none;
+    border-left: 6px solid black;
+}
+.heading h1{
+    margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .heading {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .search-bar {
+        margin-left: 20px;
+    }
+}
